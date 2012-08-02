@@ -2,4 +2,7 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Enter a Spot Tracker link
+  form(action="/", method="POST")
+    input(type="text", name="spot_url")
+    input(type="submit")
